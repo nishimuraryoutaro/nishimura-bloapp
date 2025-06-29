@@ -12,6 +12,6 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
   # homecontrollerのindexを実行
-  root to: "home#index"
+  root to: "articles#index"
   get "/about" => "home#about"
 end
