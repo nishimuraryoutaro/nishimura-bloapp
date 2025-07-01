@@ -13,5 +13,5 @@ Rails.application.routes.draw do
   # root "posts#index"
   # homecontrollerのindexを実行
   root to: "articles#index"
-  get "/about" => "home#about"
+  resources :articles, only: [:show]
 end
