@@ -14,5 +14,5 @@ Rails.application.routes.draw do
   # homecontrollerのindexを実行
   root to: "articles#index"
 
-resources :articles, only: [:show, :new, :create, :edit, :update]
+resources :articles, only: [:show, :new, :create, :edit, :update, :destroy]
 end
